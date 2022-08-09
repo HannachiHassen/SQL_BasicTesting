@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class MySQSelectCommand {
+public class MySQSelectCommand_1 {
 	 /*
 	  * Data Retriveal/Data Query Language
 	  */
