@@ -1,1 +1,5 @@
 /target/
+*.css linguist-detectable=false
+*.html linguist-detectable=false
+*.java linguist-detectable=true
+*.sql linguist-detectable=true
