@@ -7,14 +7,18 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class MySQLSelectCommand_2 {
+	/* 
+	 * In this class example We will use try & catch to capture any SQLExecption
+	 * */
+	
 	static final String DB_URL="jdbc:mysql://localhost:3306/flight";
 
 	//Datbase credentials
 	static final String USER="root";
 	static final String PASS="root";
 	
-	public static void main(String[] args) {
-
+	public static void main(String[] args) {		
+		
 		Connection con=null;
 		Statement stmt=null;
 

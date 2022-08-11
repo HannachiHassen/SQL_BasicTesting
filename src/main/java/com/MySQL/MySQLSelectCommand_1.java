@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class MySQSelectCommand_1 {
+public class MySQLSelectCommand_1 {
 	 /*
 	  * Data Retriveal/Data Query Language
 	  */
@@ -19,13 +19,15 @@ public class MySQSelectCommand_1 {
 		Statement stmt=con.createStatement();
 		
 		String query="SELECT tripId, ssn, fromCity, toCity, departureDate, returnDate FROM trip";
-		String query2="SELECT tripId, ssn, fromCity, toCity, departureDate, returnDate FROM trip WHERE tripId=102";
+		String query2="SELECT * FROM trip WHERE tripId=102";
 				
 		//	3.	Execute statement/Query
 		stmt.execute(query);
+		//stmt.execute(query2);
 		
 		//4.	Store the results in result set
 		ResultSet rs=stmt.executeQuery(query);
+		//ResultSet rs=stmt.executeQuery(query2);
 		
 		while (rs.next()) {
 			int tripid=rs.getInt("tripId");
